@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Pares - Exemplo 5.3</title>
+</head>
+<body>
+    <script>
+        let num;                                    // Declara variável num com let, pois ela poderá
+                                                    // ser acessada fora do bloco do ... while
+
+        do {                                        // Cria loop (faça...)
+            num = Number(prompt("Número: "));       // Lê o número fornecido
+            if (num == 0 || isNaN(num)) {           // Verifica se número é zero ou inválido
+                alert("Digite um número válido");   // Solicita nova entrada
+            }
+        }   while (num == 0 || isNaN(num));         // ... enquanto num = 0 ou NaN
+
+        let pares = `Pares entre 1 e ${num}: `;     // String contendo a resposta
+        for (let i = 2; i <= num; i += 2) {         // Calcula os pares e os concatena à string
+            pares = pares + i + " , ";
+        }
+        alert(pares);                             // Exibe a lista com os números pares
+    </script>
+</body>
+</html>

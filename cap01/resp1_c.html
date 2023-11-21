@@ -1,0 +1,11 @@
+<meta charset="utf-8">
+<script>
+    const preco = Number(prompt("Informe o preço do produto: ")); 
+    // Lê o preço do produto
+    const vista = preco * 0.90; 
+    // Calcula o preço a vista com 10% de desconto
+    const prazo = preco / 3; 
+    // Calcula o valor das parcelas, sem desconto
+    alert(`Preço: R$ ${preco.toFixed(2)} \nÀ vista \(10%\): R$ ${vista.toFixed(2)} \nA prazo \(3x\): R$ ${prazo.toFixed(2)}`);
+    // Exibe o preço do produto e as opções de pagamento a vista (-10%) ou a prazo (em 3x)
+</script>
