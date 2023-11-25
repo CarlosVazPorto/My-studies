@@ -1,4 +1,5 @@
 # My-studies
-Just some codes I've been doing while studying
 
-Minhas resoluções para os execícios que faço enquanto estudo.
+Os exercícios aqui propostos e resolvidos pertencem ao livro Lógica de Programação e Algoritmos com JavaScript, de autoria de Edécio Fernando Iepsen, Editora Novatec, 2ª Edição, 2022.
+
+Estas são as minhas resoluções para os mesmos, enquanto os estudava.
