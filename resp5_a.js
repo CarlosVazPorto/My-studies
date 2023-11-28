@@ -9,7 +9,7 @@ frm.addEventListener("submit", (e) => {                 // Ouvinte de evento do 
     let resposta = `${fruta}`;                          // Variável que concatena frutas e *
 
     for (i = 1; i < repete; i++){
-    resposta = resposta + `*${fruta}`;                  // Escreve o nome da fruta em posição ímpar
+    resposta = resposta + `*${fruta}`;                  // Escreve o nome da fruta
         }
     resp.innerText = resposta;
 })
