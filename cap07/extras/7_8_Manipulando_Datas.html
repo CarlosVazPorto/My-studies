@@ -1,0 +1,33 @@
+<script>
+    // Edit your script here
+    const hoje = new Date();
+    const dia = hoje.getDate();
+    const mes = hoje.getMonth();
+    const ano = hoje.getFullYear();
+    
+    console.log(hoje);
+    
+    console.log(`Data: ${dia}/${mes}/${ano}`);
+    
+    // Mostra o tipo da variável dia: number
+    console.log(typeof dia);
+    // Converte dia para string
+    const dia2 = dia.toString();
+    // dia com 2 espaços: adiciona um 0 antes se dia < 10
+    const dia3 = dia2.padStart(2, "0");
+    // Exibe as mudanças
+    console.log(`Data: ${dia}/${mes}/${ano}`);
+    
+    // Versão final com correções para a exibição do mês e do dia
+    const hojeCorr = new Date();
+    const diaCorr = hojeCorr.getDate();
+    const mesCorr = hojeCorr.getMonth() + 1;
+    const anoCorr = hojeCorr.getFullYear();
+
+    const dia2Corr = diaCorr.toString().padStart(2, "0");
+    const mes2Corr = mesCorr.toString().padStart(2, "0");
+
+    console.log(`Data: ${dia2Corr}/${mes2Corr}/${anoCorr}`);
+
+    </script>
+    <!-- edit your html here -->
