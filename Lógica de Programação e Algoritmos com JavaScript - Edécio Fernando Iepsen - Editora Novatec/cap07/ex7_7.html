@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano de Nascimento - Exemplo 7.7</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <script>
+        const anoAtual = new Date().getFullYear();
+        const idade = prompt(`Quantos anos você comemora em ${anoAtual}?`);
+        const anoNascimento = anoAtual - idade;
+        alert(`Ah... Então você nasceu em ${anoNascimento}!`);
+    </script>
+</body>
+</html>
