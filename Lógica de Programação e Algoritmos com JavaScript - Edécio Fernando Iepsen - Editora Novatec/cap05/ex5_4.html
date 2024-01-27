@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break e continue - Exemplo 5.4</title>
+</head>
+<body>
+    <script>
+        alert("Digite 0 para sair");
+        do {
+            const num = Number(prompt("Número: "));             // Lê o número
+            if (num == 0 || isNaN(num)) {                       // Se num=0 ou inválido
+                const sair = confirm("Confirma saída?");        // Solicita confirmação do usuário
+                if (sair) {
+                    break                                       // Sai da repetição
+                } else {
+                    continue                                    // volta ao início do loop
+                }
+            }
+            if (num % 2 == 0) {                                 // Se é par...
+                alert(`O dobro de ${num} é: ${num*2}.`);        // mostra o dobro
+            } else {                                            // Se é ímpar...
+                alert(`O triplo de ${num} é: ${num*3}.`);       // mostra o triplo
+            }
+        } while (true)                                          // Enquanto for verdade (só sai do loop pelo break)
+        alert("Bye, bye...");
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parquímetro - Exercício 4c</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <img src="img/Parquimetro.png" alt="Parquímetro">
+</head>
+<body>
+    <h1>Programa Parquímetro</h1>
+    <table>
+        <tr>
+            <th>Valor R$</th>
+            <th>Tempo minutos</th>
+        </tr>
+        <tr>
+            <td>1,00</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>1,75</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>3,00</td>
+            <td>120</td>
+        </tr>
+        <tr>
+            <td colspan="2">Tempo máximo: 120 minutos</td>
+        </tr>
+        <tr>
+            <td colspan="2">Valor mínimo aceito: R$ 0,05</td>
+        </tr>
+    </table>
+    <form>
+        <p>Valor pago R$: 
+            <input type="number" name="Valor" id="inValor" step="0.05" min="0.05" required>
+        </p>
+            <input type="submit" value="Confirmar depósito">
+    </form>
+    <h3 id="outTempo"></h3>
+    <h3 id="outTroco"></h3>
+    <script src="js/resp4_c.js"></script>
+</body>
+</html>
