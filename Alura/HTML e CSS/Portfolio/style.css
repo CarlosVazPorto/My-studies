@@ -1,0 +1,80 @@
+/* Este código é baseado no curso "HTML e CSS: Classes, posicionamento e Flexbox da Alura */
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #f6f6f6; 
+}
+
+img {
+    height: 47.5vh;
+    padding-left: 4vh;
+}
+
+.titulo-destaque {
+    color: #ef7530;
+}
+
+.apresentacao{
+    margin: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao__conteudo{
+    width: 615px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2rem;
+    font-family: 'Krona One', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0.5%;
+}
+
+.apresentacao__conteudo__texto__1 {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 3%;
+}
+
+.apresentacao__conteudo__texto__2 {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-bottom: 3%;
+}
+
+.apresentacao__conteudo__nome {
+    color: #ef7530;
+}
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__link{
+    background-color: #ef7530;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
