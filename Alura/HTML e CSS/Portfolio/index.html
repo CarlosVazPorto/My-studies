@@ -7,39 +7,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Carlos Vaz Porto</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Carlos Vaz Porto's Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <header></header>
+    <header class="cabecalho">
+       <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">About me</a>
+            <a class="cabecalho__menu__link" href="resume.html">Resume</a>
+       </nav> 
+    </header>
 
     <main class="apresentacao">
         
         <section class="apresentacao__conteudo">
             
             <h1 class="apresentacao__conteudo__titulo">Have you been looking for a 
-                <strong class="titulo-destaque"> passionate and dedicated Front-end developer?</strong></h1>
-            <p class="apresentacao__conteudo__texto__1">Hello there! My name is 
+                <strong class="titulo-destaque"> passionate and dedicated web developer?</strong></h1>
+            <p class="apresentacao__conteudo__texto">Hello there! My name is 
                 <span class="apresentacao__conteudo__nome">Carlos Vaz Porto</span>, 
-                 Front-end developer, at the moment working with HTML, CSS and JavaScript, learning
-                 React, Angular and Typescript and always eager to study about new technologies.</p>
-            <p class="apresentacao__conteudo__texto__2">Wanna know more about me? </p>
+                 web developer, at the moment working with HTML, CSS , JavaScript, Python and SQL, and learning
+                 React, Angular and Typescript. I am always eager to study about new technologies.</p>
+            <p class="apresentacao__conteudo__texto">Want to know more about me? </p>
             
             <div class="apresentacao__links">
-                <a class="apresentacao__links__link" href="https://www.linkedin.com/in/carlos-sergio-vaz-porto-junior-48b009282/">
-                    LinkedIn</a>
-                <a class="apresentacao__links__link" href="https://github.com/CarlosVazPorto">GitHub</a>
-            
+                <h2 class="apresentacao__links__subtitulo">Access my social networks:</h2>
+                <a class="apresentacao__links__link" href="https://github.com/CarlosVazPorto" target="_blank">
+                    <img src="./assets/assets/github.png">
+                    GitHub
+                </a>
+                <a class="apresentacao__links__link" 
+                    href="https://www.linkedin.com/in/carlos-sergio-vaz-porto-junior-48b009282/" target="_blank">
+                    <img src="./assets/assets/linkedin.png">
+                    LinkedIn
+                </a>
+                            
             </div>
 
         </section>
         
-        <img src="Foto_Carlos_25072023.jpg" alt="Foto do Carlos">
+        <img src="./assets/assets/Foto_Carlos_25072023.jpg" alt="Foto do Carlos"
+        class="apresentacao__foto">
 
     </main>
 
-    <footer></footer>
+    <footer class="rodape">
+        <p>Developed by Carlos Vaz Porto</p>
+    </footer>
 
 </body>
 

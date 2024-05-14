@@ -1,0 +1,136 @@
+/* Este código é baseado no curso "HTML e CSS: Classes, posicionamento e Flexbox da Alura */
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --color-primary: #000000;
+    --color-secondary: #f6f6f6;
+    --color-tertiary: #ef7530;
+    --color-quaternary: #f05b05;
+    --color-link-expand: #272727;
+    --font-primary: 'Krona One', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-primary);
+    color: var(--color-secondary); 
+}
+
+.cabecalho {
+    padding: 4% 0 0 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 5rem;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-tertiary);
+    text-decoration: none;
+}
+
+.apresentacao{
+    padding: 4% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao__conteudo{
+    width: 38rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2rem;
+    font-family: var(--font-primary);
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0.5%;
+}
+
+.titulo-destaque {
+    color: var(--color-tertiary);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--font-secondary);
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 3%;
+}
+
+.apresentacao__conteudo__texto a{
+    text-decoration: none;
+    color: var(--color-tertiary);
+}
+
+.apresentacao__conteudo__nome {
+    color: var(--color-tertiary);
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__link{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border: 0.125rem solid var(--color-tertiary);
+    width: 23rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1.25rem 0;
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-family: var(--font-secondary);
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--color-link-expand);
+    padding: 3%;
+    border: 0.25rem solid var(--color-quaternary);
+    cursor: pointer;
+}
+
+.apresentacao__foto {
+    height: 28rem;
+    padding-left: 4rem;
+}
+
+.rodape {
+    color: var(--color-secondary);
+    background-color: var(--color-tertiary);
+    padding: 1.5rem;
+    text-align: center;
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
