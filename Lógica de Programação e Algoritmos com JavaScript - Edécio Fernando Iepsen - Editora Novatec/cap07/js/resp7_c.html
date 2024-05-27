@@ -1,0 +1,35 @@
+<!-- Carlos Vaz Porto -->
+<!-- HTML -->
+<!-- May, 2024 -->
+<!-- Answer to exercise 7c from the book "Lógica de Programação e Algoritmos com JavaScript", de Edécio Fernando Iepsen, Novatec Editora, 2ª Edição -->
+<!-- This program works with a CSS and a JavaScript counterparts -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multa de Trânsito - Exercício 7.c</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="img/livrojs.png">
+    </head>
+
+    <body>
+        <img src="img/exerc.jpg" alt="Exercício" class="normal">
+        <h1>Multa de Trânsito</h1>
+        <form>
+            <p>Data da infração: 
+                <input type="date" name="Data da infração" id="inData" required autofocus>
+            </p>
+            <p>Valor da Multa: R$
+                <input type="number" name="Valor da Multa" id="inValor" class="alinha-direita">
+            </p>
+            <input type="submit" value="Calcular Data Limite e Valor com Desconto">
+        </form>
+        <h3 id="outData"></h3>
+        <h3 id="outValor"></h3>
+        <script src="js/resp7_c.js"></script>
+    </body>
+
+</html>
