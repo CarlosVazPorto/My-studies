@@ -2,7 +2,7 @@
 // JavaScript
 // May, 2024
 // Answer to exercise 7b from the book "Lógica de Programação e Algoritmos com JavaScript", de Edécio Fernando Iepsen, Novatec Editora, 2ª Edição
-// This program works with a CSS and a JavaScript counterparts
+// This program works with a HTML and a CSS counterparts
 
 // JavaScript program that checks if an inputted sentence is a palindrome
 
