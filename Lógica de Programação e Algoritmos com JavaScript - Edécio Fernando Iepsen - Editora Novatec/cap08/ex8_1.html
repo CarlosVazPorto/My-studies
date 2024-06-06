@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 8.1</title>
+    <style>
+        body {
+            background-color: lightslategray;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const situacao = (nota, media = 7) => {
+            if (nota >= media) {
+                alert("Aprovado!");
+            } else {
+                alert("Reprovado.")
+            }
+        }
+        const prova1 = Number(prompt("Entrar nota do aluno: "));
+
+        situacao(prova1, 7) // chama a função "situacao" passando 2 parâmetros
+    </script>
+</body>
+</html>
