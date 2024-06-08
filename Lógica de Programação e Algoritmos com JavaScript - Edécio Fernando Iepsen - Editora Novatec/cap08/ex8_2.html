@@ -1,0 +1,39 @@
+<!-- Carlos Vaz Porto -->
+<!-- HTML -->
+<!-- June, 2024 -->
+<!-- Example 8.2 from the book "Lógica de Programação e Algoritmos com JavaScript", from Edécio Fernando Iepsen, Novatec Editora, 2ª Edição -->
+<!-- This program works with a CSS and a JavaScript counterparts -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Revenda Avenida - Exemplo 8.2 </title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="icon" href="img/livrojs.png">
+    </head>
+
+    <body>
+        <img src="img/ex8_2.jpg" alt="Em 10 vezes" class="normal">
+        <h1>Revenda Avenida - Promoção!!!</h1>
+        <form>
+            <p>Modelo do Veículo: 
+                <input type="text" name="Modelo" id="inModelo" required autofocus>
+            </p>
+            <p>Ano de Fabricação: 
+                <input type="number" name="Ano" id="inAno" required>
+            </p>
+            <p>Preço: R$ 
+                <input type="number" name="Preço" id="inPreco" min="0" step="0.01" required>
+            </p>
+            <input type="submit" value="Classificar e calcular entrada e parcelas">
+        </form>
+        <h3 id="outResp1"></h3>
+        <h3 id="outResp2"></h3>
+        <h3 id="outResp3"></h3>
+        <script src="js/ex8_2.js"></script>
+    </body>
+
+</html>
