@@ -1,0 +1,53 @@
+<!-- Carlos Vaz Porto -->
+<!-- HTML -->
+<!-- June, 2024 -->
+<!-- Example program 8.4 from the book "Lógica de Programação e Algoritmos com JavaScript", de Edécio Fernando Iepsen, Novatec Editora, 2ª Edição -->
+<!-- This program works with a CSS and a JavaScript counterparts -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Avenida - Exemplo 8.4</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <img src="img/ex8_4.jpg" alt="Pizzaria" class="normal">
+    
+    <h1>Pizzaria Avenida - Controle de Pedidos</h1>
+    
+    <form>
+        <p>Item do pedido: 
+            <input type="radio" name="produto" id="rbPizza" checked autofocus>Pizzaria
+            <input type="radio" name="produto" id="rbBebida">Bebida
+            <span>Item:</span>
+            <select name="Pizza" id="inPizza">
+                <option value="brotinho">Pizza brotinho</option>
+                <option value="media">Pizza média</option>
+                <option value="grande">Pizza grande</option>
+                <option value="familia">Pizza família</option>
+            </select>
+            <select name="Bebida" id="inBebida" class="oculta">
+                <option value="refri_lata">Refrigerante lata</option>
+                <option value="refri_litros">Refrigerante 2 litros</option>
+                <option value="cerveja_lata">Cerveja lata</option>
+                <option value="cerveja_garrafa">Cerveja garrafa 600ml</option>
+                <option value="suco">Suco natural jarra</option>
+                <option value="agua">Água mineral garrafa 500ml</option>
+            </select>
+        </p>
+        <p>Detalhes do item: 
+            <input type="text" name="Detalhes" id="inDetalhes" class="detalhes">
+            <input type="submit" value="Adicionar">
+        </p>
+    </form>
+    
+    <pre></pre>
+
+    <script src="js/ex8_4.js"></script>
+    
+</body>
+
+</html>
