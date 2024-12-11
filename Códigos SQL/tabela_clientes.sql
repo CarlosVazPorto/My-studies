@@ -43,4 +43,9 @@ Insert INTO tabela_clientes
  ('29', 'Fábio Rodrigues', 'fabio.rodrigues@email.com', 'Alameda dos Campos, 678'),
  ('30', 'Larissa Pereira', 'larissa.pereira@email.com', 'Rua dos Bosques, 123');
 
+UPDATE tabelaclientes
+SET informacoes_de_contato = 'j.santos@email.com', 
+endereco_cliente = 'Rua dos Paralelepípedos, 30'
+WHERE id_cliente = '2';
+
 SELECT * FROM tabelaclientes;
